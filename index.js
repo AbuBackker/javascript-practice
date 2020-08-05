@@ -167,3 +167,14 @@ function addition(num1, num2) {
     return result;
 }
 // document.write("Result = " + addition(5, 4));
+
+// Array =>
+
+var num = [10, 20, 30, 40, 50];
+var sum = 0;
+
+for (var i = 0; i < 5; i++) {
+    document.write(num[i] + "</br>");
+    sum = sum + num[i];
+}
+document.write("sum =" + sum);
