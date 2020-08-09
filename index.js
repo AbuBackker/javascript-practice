@@ -199,3 +199,48 @@ for (var i = 1; i <= 5; i++) {
 
 // document.write("Number of Won = " + numOfWon + "</br>");
 // document.write("Number of Lost = " + numOfLost + "</br>");
+
+// Onclick (Image Slider) =>
+
+var imgArray = [
+    "https://live.hasthemes.com/html/5/ecolife-preview/ecolife/assets/images/product-image/organic/thumb-1.jpg",
+    "https://live.hasthemes.com/html/5/ecolife-preview/ecolife/assets/images/product-image/organic/thumb-2.jpg",
+    "https://live.hasthemes.com/html/5/ecolife-preview/ecolife/assets/images/product-image/organic/thumb-3.jpg",
+    "https://live.hasthemes.com/html/5/ecolife-preview/ecolife/assets/images/product-image/organic/thumb-4.jpg",
+];
+
+var imgTag = document.querySelector("img");
+var count = 0;
+
+function next() {
+    count++;
+    if (count >= imgArray.length) {
+        count = 0;
+        imgTag.src = imgArray[count];
+    } else {
+        imgTag.src = imgArray[count];
+    }
+}
+
+function prev() {
+    count--;
+    if (count < 0) {
+        count = imgArray.length - 1;
+        imgTag.src = imgArray[count];
+    } else {
+        imgTag.src = imgArray[count];
+    }
+}
+
+// Onclick (Dynamic Style) =>
+
+function addStyle() {
+    var myVar = document.querySelector("#styleID");
+    myVar.classList.add("para-style");
+    // myVar.style.color = "red";
+}
+
+function removeStyle() {
+    var myVar = document.querySelector("#styleID");
+    myVar.classList.remove("para-style");
+}
