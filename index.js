@@ -244,3 +244,50 @@ function removeStyle() {
     var myVar = document.querySelector("#styleID");
     myVar.classList.remove("para-style");
 }
+
+// Find & Filter =>
+
+const numbers = [1, 2, 3, 4, 5, 6];
+
+const gaterThanThree = numbers.find((num) => num > 3);
+// console.log(gaterThanThree);
+
+const upper3 = numbers.filter((num) => num > 3);
+// console.log(upper3);
+
+// Mapping &  Destructuring =>
+
+const names = [
+    "ashraful",
+    "ab de villiers ",
+    "shakib",
+    "broad",
+    "maxwell",
+    "mahela jayawardene",
+];
+
+const upperCase = names.map((name) => name.toUpperCase());
+// console.log(upperCase);
+
+const [a, b, c, d, e, f] = names;
+// console.log(a);
+
+// const person = {
+//     name: "Mosh",
+//     walk() {},
+//     talk() {},
+// };
+// person.talk();
+// person.name = "";
+
+// const targetMember = "name";
+// person[targetMember.value] = "Jhon";
+
+// const person = {
+//     name: "Mosh",
+//     walk() {
+//         console.log(this);
+//     },
+// };
+
+// person.walk();
